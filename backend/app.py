@@ -2,9 +2,10 @@ from flask import Flask, request, jsonify
 import subprocess
 import os
 from flask_cors import CORS 
+
 app = Flask(__name__)
 CORS(app) 
-# Define a route
+
 def shell(commandUser):
     out=""
     command=commandUser.split()
@@ -16,6 +17,7 @@ def shell(commandUser):
         except:
             out="Unknown command: "+str(commandUser)
     return out
+
 @app.route('/', methods=['POST'])
 @app.route('/api/data', methods=['POST'])
 def receive_data():

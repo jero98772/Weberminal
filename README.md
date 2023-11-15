@@ -12,7 +12,7 @@ Features
     Rich Command Support: Execute Python scripts, run system commands, and more.
     Real-time Output: Instant display of command output and responses.
 
-### Installation
+## Installation
 
 To run Weberminal locally, follow these steps:
 Prerequisites
@@ -20,37 +20,42 @@ Prerequisites
     Node.js
     Python
 
-Clone Repository
+### Clone Repository
 
-bash
+	git clone https://github.com/your_username/weberminal.git
+	cd weberminal
 
-git clone https://github.com/your_username/weberminal.git
-cd weberminal
+### Setup Frontend (React)
 
-Setup Frontend (React)
+bash 1
 
-bash
+	cd frontend
+	npm install
+	npm start
 
-cd frontend
-npm install
-npm start
+### Setup Backend (Python)
 
-Setup Backend (Python)
+bash 2
 
-bash
+	cd backend
 
-cd backend
-# Setup virtual environment (optional but recommended)
-python -m venv venv
-# Activate virtual environment (for Windows)
-venv\Scripts\activate
-# Activate virtual environment (for macOS/Linux)
-source venv/bin/activate
+#### Setup virtual environment (optional but recommended)
 
-pip install -r requirements.txt
-python app.py
+	python -m venv venv
 
-### Usage
+#### Activate virtual environment (for Windows)
+
+	venv\Scripts\activate
+
+#### Activate virtual environment (for macOS/Linux)
+
+	source venv/bin/activate
+
+	pip install -r requirements.txt
+	cd backend
+	python app.py
+
+## Usage
 
 Once the frontend and backend servers are up and running, access Weberminal in your web browser at http://localhost:3000.
 
